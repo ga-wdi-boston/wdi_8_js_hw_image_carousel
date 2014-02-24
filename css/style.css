@@ -1,0 +1,15 @@
+img {
+  width: 500px;
+}
+
+.item {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.carousel-indicators li {
+  display: inline;
+}
