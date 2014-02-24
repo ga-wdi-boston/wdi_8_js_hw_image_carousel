@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>Image Carousel</title>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
   <div id="carousel">
@@ -17,22 +17,39 @@
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       </ol>
+      <button id='left'>left</button>
+      <button id='right'>right</button>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item active">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            First image caption
-          </div>
-        </div>
+        <ul id="image-list">
+          <li>
+            <div class="item active" id="slide-0">
+              <img src="http://www.isotope244.com/i/tropical-island-escape-animated-3d-screensaver-shot5.jpg" alt="Tropical 1">
+              <div class="carousel-caption">
+                Water
+              </div>
+            </div>
+          </li>
 
-        <div class="item">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            Second image caption
-          </div>
-        </div>
+          <li>
+            <div class="item" id="slide-1">
+              <img src="http://www.ktskiengiang.com/upload/UserFiles/Image/tropical-4-coconut-trees.jpg" alt="Tropical 2">
+              <div class="carousel-caption">
+                Palm trees
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item" id="slide-2">
+              <img src="http://www.hdwallpaperstube.com/wp-content/uploads/2013/04/hd-tropical-wallpapers.jpg" alt="Tropical 2">
+              <div class="carousel-caption">
+                Palm trees
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <!-- Controls -->
