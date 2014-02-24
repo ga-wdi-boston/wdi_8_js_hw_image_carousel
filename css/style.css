@@ -3,20 +3,24 @@
 	height: 300px;
 	background: black;
 	overflow: hidden;
+	white-space: nowrap;
+	background: black;
+	color: white;
+	position: relative;
 }
 
-.carousel-inner ul {
+.carousel-inner > ul {
 	position: absolute;
 }
 
 .carousel-inner ul > li {
 	display: inline-block;
-
+	margin: 0;
+	padding: 0;
 }
 
 .item {
 	width: 500px;
-/*	overflow: hidden;*/
 }
 
 .item img {
