@@ -1,0 +1,90 @@
+body {
+	background: whitesmoke;
+	color: white;
+	font-family: sans-serif;
+}
+
+ol li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.carousel-indicators {
+	margin: 0 auto;
+	width: 20%;
+	text-align: center;
+	padding: 5px;
+}
+
+
+.carousel-outer {
+	width: 500px;
+	height: 400px;
+	margin: 20px auto;
+}
+
+.carousel-inner {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	color: white;
+	position: relative;
+	border: 5px solid gray;
+	padding: 0;
+}
+
+.carousel-inner > ul {
+	position: absolute;
+	margin-right: -5px;
+	padding: 0;
+}
+
+.carousel-inner ul > li {
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.item {
+	width: 400px;
+	height: 400px;
+	margin: 0;
+	padding: 0:;
+}
+
+.item img {
+	width: 100%;
+	height:400px;
+	margin: 0;
+	padding: 0;
+}
+
+.arrow {
+	width: 20px;
+	height: 20px;
+	margin-top: 50%;
+	text-align: center;
+	background: gray;
+	border-radius: 50%;
+}
+
+.arrow:hover {
+	background: black;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.carousel-caption {
+	height: 50px;
+	width: 100%;
+	background-color: rgba(0,0,0,.8);
+	margin-top: -50px;
+	text-align: center;
+}
