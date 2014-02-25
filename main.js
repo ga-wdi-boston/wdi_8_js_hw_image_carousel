@@ -20,13 +20,19 @@ function getVisible(element) {
 	};
 
 function prev(number, array) {
-	if(number === 0) return array-1;
-	else return number-1;
+	if(number == 0) {
+		return array - 1;
+	}	else {
+			return number - 1;
+		}
 };
 
 function next(number, array) {
-	if(number === array -1) return 0;
-	else return number + 1;
+	if(number == array - 1) {
+		return 0;
+	} else {
+			return number + 1;
+	}
 };
 
 }
