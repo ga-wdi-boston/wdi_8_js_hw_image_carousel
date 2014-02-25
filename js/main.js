@@ -14,7 +14,6 @@ carouselApp.slide = function() {
 	var $on_deck = $('#carousel img.on-deck');
 	var $in_the_hole = $('#carousel img.in-the-hole');
 
-
 	$active.addClass('in-the-hole');
 	$active.removeClass('active');
 
