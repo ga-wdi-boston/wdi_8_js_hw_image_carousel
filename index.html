@@ -8,18 +8,20 @@
   <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
+  <header>
+    <h1>Slide Show of our Snow Shoe Adventure</h1>
+  </header>
   <div id="carousel">
-    <div id="carousel-example-generic" class="carousel slide">
-
+    <div>
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="" data-slide-to="0" class="active">Active</li>
-        <li data-target="" data-slide-to="1">*</li>
-        <li data-target="" data-slide-to="2">*</li>
-        <li data-target="" data-slide-to="3">*</li>
-        <li data-target="" data-slide-to="4">*</li>
-        <li data-target="" data-slide-to="5">*</li>
-        <li data-target="" data-slide-to="6">*</li>
+        <li class="active"><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div id="invisible-li"></div></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -68,12 +70,8 @@
       </div>
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="left-icon">left</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="right-icon ">right</span>
-      </a>
+      <div class="left-click carousel-control"></div>
+      <div class="right-click carousel-control"></div>
     </div>
   </div>
 </body>
