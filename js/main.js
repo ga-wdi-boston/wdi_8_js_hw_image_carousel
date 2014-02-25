@@ -1,3 +1,4 @@
+
 $(function() {
 
 var carousel = $('#carousel'),
@@ -14,8 +15,7 @@ pictures().first().addClass('active');
 pictures().first().fadeIn(shift_time);
 
 
-interval = setInterval(
-    function(){
+interval = setInterval(function(){
     var i = carousel.find('.active').index();
 
     pictures().eq(i).removeClass('active');
@@ -29,5 +29,7 @@ interval = setInterval(
     }
      , shift_time + shift_distance
     );
+
 });
+
 
