@@ -5,13 +5,22 @@
   border-radius: 5px;
   background-color: #69D2E7;
   text-align: center;
-  display: inline-block;
   opacity: .5;
-  filter: alpha(opacity=50);
+}
+
+ul {
   position: absolute;
+}
+
+ul li {
+  display: inline-block;
 }
 
 
 body {
 	text-align: center;
+}
+
+.hide {
+  display: none;
 }

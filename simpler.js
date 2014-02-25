@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$(this).click(rotate);
 });
 
-
-fade_me = function() {
-	$(this).fadeToggle('slow');
+rotate = function() {
+	a=$('#images')
+	a.animate({"left": "-=300px"})
 };
