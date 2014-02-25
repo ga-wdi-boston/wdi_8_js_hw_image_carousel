@@ -47,8 +47,32 @@ $(document).ready(function(){
 	//wait
 	setInterval(jknsCarousel.playWithIndicator, 3000);
 
+	// $('.next').click(function(event){
+	// 	jknsCarousel.usingButtons();
+	// });
 
 });
+
+// jknsCarousel.usingButtons = function(){
+//   var images_array = $('.item')
+//       currentImageIndex = 0,
+//       current = $('.item.active'),
+//       next = current.next(),
+//       first = $('.item').first();
+
+//   var janiceHandler = function(event){
+//     if(currentImageIndex === (images_array.length - 1) ){
+//       currentImageIndex = 0;
+// 	    current.removeClass('active');
+//     }else{
+//       currentImageIndex += 1;
+//       next = first;
+//       next.addClass('active');
+//     }
+//   };
+// };
+
+
 
 
 
