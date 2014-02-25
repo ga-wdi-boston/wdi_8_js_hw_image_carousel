@@ -1,6 +1,7 @@
 body {
 	background: whitesmoke;
 	color: white;
+	font-family: sans-serif;
 }
 
 ol li {
@@ -8,20 +9,19 @@ ol li {
 	margin-right: 10px;
 }
 
-.carousel-indicators {
+/*.carousel-indicators {
 	margin: 0 auto;
 	width: 20%;
 	background:gray;
 	text-align: center;
 	padding: 5px;
 }
-
+*/
 
 .carousel-outer {
 	width: 500px;
 	height: 400px;
 	margin: 20px auto;
-	position: relative;
 }
 
 .carousel-inner {
@@ -60,10 +60,17 @@ ol li {
 	padding: 0;
 }
 
-.arrow{
-	width: 50px;
-	height: 400px;
-	vertical-align: center;
+.arrow {
+	width: 20px;
+	height: 20px;
+	margin-top: 50%;
+	text-align: center;
+	background: gray;
+	border-radius: 50%;
+}
+
+.arrow:hover {
+	background: black;
 }
 
 .float-left {
@@ -72,4 +79,13 @@ ol li {
 
 .float-right{
 	float: right;
+}
+
+.carousel-caption {
+	height: 50px;
+	width: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 21;
+	margin-top: -50px;
+	text-align: center;
 }
