@@ -1,0 +1,13 @@
+#carousel {
+	margin-top: 100px;
+	margin-left: 24%;
+}
+
+#carousel img {
+	position: absolute;
+	z-index: 1
+}
+
+#carousel img.active {
+	z-index: 3;
+}
