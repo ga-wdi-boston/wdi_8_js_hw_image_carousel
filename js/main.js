@@ -39,9 +39,13 @@ $(document).ready(function(){
 		// Step 3: make next item active
 		$next.addClass('active');
 	};
+
+	jknsCarousel.playWithIndicator = function(){
+		jknsCarousel.playImage();
+		jknsCarousel.playIndicator();
+	};
 	//wait
-	setInterval(jknsCarousel.playImage, 3000);
-	setInterval(jknsCarousel.playIndicator, 3000);
+	setInterval(jknsCarousel.playWithIndicator, 3000);
 
 
 });
