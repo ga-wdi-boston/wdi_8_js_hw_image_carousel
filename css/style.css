@@ -3,7 +3,7 @@
 body{
 	font-family: Helvetica, Arial, Sans-Serif;
 	background:#4B0082;
-	color:#808080;
+	color: white;
 	padding: 5%;
 }
 
@@ -19,6 +19,14 @@ body{
 .carousel-inner {
 	background-color: purple;
 	text-align: center;
+}
+
+.indicator.active {
+	display:block;
+}
+
+.indicator {
+	display: none;
 }
 
 .item.active {
