@@ -5,9 +5,14 @@
 
 #carousel img {
 	position: absolute;
-	z-index: 1
 }
 
 #carousel img.active {
 	z-index: 3;
+}
+#carousel img.on-deck {
+	z-index: 2;
+}
+#carousel img.in-the-hole {
+	z-index: 1;
 }
