@@ -5,6 +5,7 @@ $(document).ready(function() {
 		var current_active = $('div.active'),
 			active_li = $('li.active');
 
+
 		if ($('.item').index(current_active) < $('.item').length - 1) {
 			current_active.next('.item').addClass('active');
 			active_li.next('li').addClass('active');
