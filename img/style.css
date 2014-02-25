@@ -1,15 +1,16 @@
 #carousel{
     width:500px;
-    height:500px;
+    height:550px;
     overflow:hidden;
+    margin-left: 300px;
 }
 #carousel-inner{
-    width:1000px;
+    width:1500px;
     position:relative;
 }
 #carousel-inner div{
     width:500px;
-    height:500px;
+    height:550px;
     float:left;
     position:relative;
 }
