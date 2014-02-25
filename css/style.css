@@ -7,6 +7,10 @@ body{
 	padding: 5%;
 }
 
+.header {
+	text-align: center;
+}
+
 #carousel{
 	width:1000px;
 	margin:auto;
@@ -17,7 +21,7 @@ body{
 	text-align: center;
 }
 
-.item-active {
+.item.active {
 	display:block;
 }
 
