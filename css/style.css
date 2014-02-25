@@ -1,0 +1,26 @@
+ /*div with overflow:hidden css property*/
+
+body{
+	font-family: Helvetica, Arial, Sans-Serif;
+	background:#4B0082;
+	color:#808080;
+	padding: 5%;
+}
+
+#carousel{
+	width:1000px;
+	margin:auto;
+}
+
+.carousel-inner {
+	background-color: purple;
+	text-align: center;
+}
+
+.item-active {
+	display:block;
+}
+
+.item {
+	display: none;
+}
