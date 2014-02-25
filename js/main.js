@@ -2,9 +2,10 @@ $(document).ready(function(){
 
 	$('#left').click(CarouselApp.slideLeft);
 	$('#right').click(CarouselApp.slideRight);
-	// $("[data-slide-to='0']").click(CarouselApp.setTo("0px"));
-	// $("[data-slide-to='1']").click(CarouselApp.setTo("-500px"));
-	// $("[data-slide-to='2']").click(CarouselApp.setTo("-1005px"));
+
+	$("[data-target='#carousel-example-generic']").click(CarouselApp.setTo);
+
+
 });
 
 CarouselApp = {};
@@ -25,7 +26,18 @@ CarouselApp.slideRight = function(event){
 	};
 };
 
-CarouselApp.setTo = function(position){
+CarouselApp.setTo = function(event){
+	var position;
+
+	if(event.target === $("[data-slide-to='0']")){
+		position = '0px';
+	} else if(event.target === $("[data-slide-to='1']")) {
+		position = '-400px';
+	} else {
+		position = '-800px';
+	}
+
 	$('#image-list').animate({ "left": position }, 3000 );
 };
+
 
