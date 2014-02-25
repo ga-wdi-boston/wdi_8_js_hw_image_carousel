@@ -2,46 +2,60 @@
 <html>
 <head>
   <title>Image Carousel</title>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/flat-ui.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
   <div id="carousel">
-    <div id="carousel-example-generic" class="carousel slide">
+    <div id="carousel-example-generic">
 
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
+      <div class="my-carousel-main">
+        <!-- Controls -->
+        <a class="left slide-buttons">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right slide-buttons">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <ol class="my-carousel">
+         <!--  <li data-slide-to="0" class="active"></li>
+          <li data-slide-to="1"></li>
+          <li data-slide-to="2"></li> -->
+        </ol>
+        <h3 id="img-added">Imaged Added</h3>
+      </div>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            First image caption
+      <div class="my-carousel-inner">
+        <div class="item">
+          <img src="./img/goodnews.jpg" alt="goodnews">
+          <div class="my-caption">
+            Good News for People Who Love Bad News
           </div>
         </div>
 
         <div class="item">
-          <img src="..." alt="...">
-          <div class="carousel-caption">
-            Second image caption
+          <img src="./img/longdrive.jpg" alt="longdrive">
+          <div class="my-caption">
+            This Is a Long Drive for Someone with Nothing to Think About
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="./img/building.jpg" alt="building">
+          <div class="my-caption">
+            Building Nothing Out of Something
           </div>
         </div>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="left-icon"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="right-icon "></span>
-      </a>
+      <input type="text" placeholder="Image URL" id="newimg-url" class="form-control">
+      <input type="text" placeholder="Caption" id="newimg-caption" class="form-control">
+      <button type="button" id="newartist" class="btn btn-info">Add Image</button>
     </div>
   </div>
 </body>
