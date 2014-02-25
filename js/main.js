@@ -1,7 +1,8 @@
+var ImgScroll = {};
 $(document).ready(function() {
-	var a = $('a.carousel-control');
+	ImgScroll.a = $('a.carousel-control');
 
-	var image_scroll = window.setInterval(function() {
+	ImgScroll.image_scroll = window.setInterval(function() {
 		var current_active = $('div.active'),
 			active_li = $('li.active');
 
@@ -20,7 +21,7 @@ $(document).ready(function() {
 		}
 	}, 5000);
 
-	a.click(function() {
+	ImgScroll.a.click(function() {
 		var current_active = $('div.active'),
 			active_li = $('li.active');
 			if($(this)[0].classList.contains('right')) {
@@ -50,8 +51,8 @@ $(document).ready(function() {
 			}
 	});
 
-
-	$( "li[data-target*='#carousel-example-generic']" ).click(function() {
+	ImgScroll.li = $( "li[data-target*='#carousel-example-generic']" );
+	ImgScroll.li.click(function() {
 		var index = parseInt($(this).attr('data-slide-to'));
 
 		index = index +1;
