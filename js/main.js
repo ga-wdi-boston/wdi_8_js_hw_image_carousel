@@ -22,11 +22,10 @@ $(function() {
       slides().eq(i).fadeOut(transition_time);
 
       if(slides().length === i + 1) {
-        i =-1;
+        i =- 1;
       };
-
-      slides().eq(i + 1).fadeIn(transition_time);
       slides().eq(i + 1).addClass('active');
+      slides().eq(i + 1).fadeIn(transition_time);
     }
     , transition_time + time_between_slides
   );
