@@ -21,7 +21,8 @@ $(document).ready(function() {
 		}
 	}, 5000);
 
-	ImgScroll.a.click(function() {
+	ImgScroll.a.click(function(event) {
+		event.preventDefault();
 		var current_active = $('div.active'),
 			active_li = $('li.active');
 			if($(this)[0].classList.contains('right')) {
@@ -52,7 +53,8 @@ $(document).ready(function() {
 	});
 
 	ImgScroll.li = $( "li[data-target*='#carousel-example-generic']" );
-	ImgScroll.li.click(function() {
+	ImgScroll.li.click(function(event) {
+		event.preventDefault();
 		var index = parseInt($(this).attr('data-slide-to'));
 
 		index = index +1;
