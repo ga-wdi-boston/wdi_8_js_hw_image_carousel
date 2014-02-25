@@ -1,5 +1,8 @@
 $(function() {
   pCarousel.appendImages();
+  $(".left").data("direction", "left");
+  $(".right").data("direction", "right");
+  $(".carousel-control").click(pCarousel.slide);
 });
 
 var pCarousel = {};
@@ -17,18 +20,20 @@ pCarousel.appendImages = function() {
   list.children().first().addClass("my-active");
 }
 
-pCarousel.slide = function(direction) {
+pCarousel.slide = function() {
   var itemWidth = $(".my-carousel li").outerWidth(),
       currentLeft = parseInt($(".my-carousel").css("left")) || 0,
+      direction = $(this).data().direction;
       active = $(".my-active"); // used to check if we're all the way left/right
 
-  if (direction === "right" && !active.is(":first-child")) {
+   if (direction === "left" && !active.is(":first-child")) {
     $(".my-carousel:not(:animated)").animate({
       "left": currentLeft + itemWidth},500);
     active.prev().addClass("my-active");
     active.removeClass("my-active");
   }
-  if (direction === "left" && !active.is(":last-child")) {
+
+  if (direction === "right" && !active.is(":last-child")) {
     $(".my-carousel:not(:animated)").animate({
       "left": currentLeft - itemWidth},500);
     active.next().addClass("my-active");

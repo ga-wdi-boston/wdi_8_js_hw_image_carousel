@@ -3,6 +3,10 @@ img {
   height: 100%;
 }
 
+body {
+  background-color: #34495E;
+}
+
 .item {
   width: 500px;
   height: 500px;
@@ -12,12 +16,6 @@ img {
 }
 
 .my-carousel {
-/*  margin: 0 auto;
-  left: 0px;
-  width: 250px;
-  height: 240px;
-  overflow: hidden;
-  text-align: center;*/
   position: relative;
   white-space: nowrap; /* necessary to flow outside of container */
 }
@@ -37,4 +35,19 @@ img {
   height: 500px;
   margin: 0 auto;
   display: inline-block;
+}
+
+.my-caption {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  top: -50px;
+  line-height: 50px;
+  background-color: rgba(55, 55, 55, 0.8);
+  color: #BDC3C7;
+  font-size: 16px;
+}
+
+.carousel-control {
+  z-index: 100;
 }
