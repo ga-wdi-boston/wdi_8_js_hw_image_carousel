@@ -16,17 +16,18 @@
       <!-- Indicators -->
       <div class="my-carousel-main">
         <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="left-icon"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="right-icon "></span>
-      </a>
+        <a class="left slide-buttons">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right slide-buttons">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
         <ol class="my-carousel">
          <!--  <li data-slide-to="0" class="active"></li>
           <li data-slide-to="1"></li>
           <li data-slide-to="2"></li> -->
         </ol>
+        <h3 id="img-added">Imaged Added</h3>
       </div>
 
       <!-- Wrapper for slides -->
@@ -52,8 +53,9 @@
           </div>
         </div>
       </div>
-
-
+      <input type="text" placeholder="Image URL" id="newimg-url" class="form-control">
+      <input type="text" placeholder="Caption" id="newimg-caption" class="form-control">
+      <button type="button" id="newartist" class="btn btn-info">Add Image</button>
     </div>
   </div>
 </body>

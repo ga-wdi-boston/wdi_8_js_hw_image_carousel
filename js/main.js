@@ -2,14 +2,15 @@ $(function() {
   pCarousel.appendImages();
   $(".left").data("direction", "left");
   $(".right").data("direction", "right");
-  $(".carousel-control").click(pCarousel.slide);
+  $(".slide-buttons").click(pCarousel.slide);
+  $("#newartist").click(pCarousel.addImage);
 });
 
 var pCarousel = {};
 
 pCarousel.appendImages = function() {
   var items = $(".item"),
-      list  = $("ol.my-carousel"),
+      list  = $(".my-carousel"),
       item;
 
   list.empty();
@@ -39,4 +40,29 @@ pCarousel.slide = function() {
     active.next().addClass("my-active");
     active.removeClass("my-active");
   }
+}
+
+pCarousel.addImage = function() {
+  var imageURL = $("#newimg-url"),
+      imageCap = $("#newimg-caption"),
+      newImageNode,
+      newItemNode,
+      newCaptionNode;
+
+  newImageNode = $("<img/>", {
+    src: imageURL.val(),
+    alt: imageCap.val()});
+
+  newCaptionNode = $("<div/>", {
+    "class": "my-caption",
+    html: imageCap.val()});
+
+  newItemNode = $("<div/>", { "class": "item"});
+  newItemNode.append(newImageNode).append(newCaptionNode);
+  $("<li/>").append(newItemNode).appendTo($(".my-carousel"));
+
+  $("#img-added").show().delay(3000).fadeOut("slow");
+
+  imageURL.val("");
+  imageCap.val("");
 }
