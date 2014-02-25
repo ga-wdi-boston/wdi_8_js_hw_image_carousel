@@ -2,23 +2,3 @@ img {
   height: 400px;
   width: 600px;
 }
-
-#carousel {
-  height: 400px;
-  position: relative;
-}
-
-.carousel-example-generic {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-.carousel-inner {
-  position: relative;
-}
-.item {
-  position: absolute;
-}
