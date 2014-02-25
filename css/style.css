@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#carousel {
+	min-width: 100%;
+	height: 700px;
+}
+
+.carousel-inner {
+	height: 700px;
+}
+
+.item {
+	height: 100%;
+}
+
+.image {
+	min-width: 100%;
+	overflow: hidden;
+}
+
+.carousel-control {
+
+	max-height: 700px;
+
+	padding-top: 300px;
+
+}
+
+.right {
+	right: 40px;
+
+}
