@@ -2,3 +2,18 @@ img {
   height: 400px;
   width: 600px;
 }
+
+#carousel {
+  margin: 10px 0;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
