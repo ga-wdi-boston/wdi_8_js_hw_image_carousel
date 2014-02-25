@@ -1,29 +1,75 @@
-.carousel-inner {
+body {
+	background: whitesmoke;
+	color: white;
+}
+
+ol li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.carousel-indicators {
+	margin: 0 auto;
+	width: 20%;
+	background:gray;
+	text-align: center;
+	padding: 5px;
+}
+
+
+.carousel-outer {
 	width: 500px;
-	height: 300px;
-	background: black;
+	height: 400px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.carousel-inner {
+	width: 400px;
+	height: 400px;
+	margin: 20px auto;
 	overflow: hidden;
 	white-space: nowrap;
-	background: black;
 	color: white;
 	position: relative;
+	border: 5px solid gray;
+	padding: 0;
 }
 
 .carousel-inner > ul {
 	position: absolute;
+	margin-right: -5px;
+	padding: 0;
 }
 
 .carousel-inner ul > li {
 	display: inline-block;
-	margin: 0;
-	padding: 0;
+	margin-right: -4px;
 }
 
 .item {
-	width: 500px;
+	width: 400px;
+	margin: 0;
+	padding: 0:;
 }
 
 .item img {
 	width: 100%;
-	height:300px;
+	height:400px;
+	margin: 0;
+	padding: 0;
+}
+
+.arrow{
+	width: 50px;
+	height: 400px;
+	vertical-align: center;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right{
+	float: right;
 }
