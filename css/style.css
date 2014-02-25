@@ -1,6 +1,8 @@
 #carousel {
-	margin-top: 100px;
-	margin-left: 24%;
+  position: fixed;
+  left: 50%;
+  margin-top: 50px;
+  margin-left: -300px;
 }
 
 #carousel img {
@@ -15,4 +17,22 @@
 }
 #carousel img.in-the-hole {
 	z-index: 1;
+}
+
+button {
+	padding: 10px 19px;
+	font-size: 17px;
+	line-height: 1.471;
+	border-radius: 6px;
+	color: #ffffff;
+	background-color: #34495e;
+	border: none;
+	font-weight: normal;
+	cursor: pointer;
+	float: center;
+}
+
+#next-button {
+	text-align: center;
+	margin-bottom: 50px;
 }

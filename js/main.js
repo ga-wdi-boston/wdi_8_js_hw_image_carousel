@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('#next-image').click(function() {
-		carouselApp.slide();
+		 carouselApp.slide();
 	});
 
 });
