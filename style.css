@@ -1,0 +1,17 @@
+
+.slide {
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #69D2E7;
+  text-align: center;
+  display: inline-block;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  position: absolute;
+}
+
+
+body {
+	text-align: center;
+}
